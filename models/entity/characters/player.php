@@ -3,6 +3,7 @@
 Class Player {
     Private $life;
     Private $damage;
+    Private $defense;
     Private $name;
 
     /**
@@ -35,6 +36,22 @@ Class Player {
     public function setDamage($damage)
     {
         $this->damage = $damage;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDefense()
+    {
+        return $this->defense;
+    }
+
+    /**
+     * @param mixed $defense
+     */
+    public function setDefense($defense)
+    {
+        $this->damage = $defense;
     }
 
     /**
