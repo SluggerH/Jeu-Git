@@ -11,7 +11,10 @@ body{
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background-color: #0F5959;
+    background-image: url("assets/fond.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -24,8 +27,8 @@ body{
 }
 
 .welcome{
-    color: whitesmoke;
-    font-weight: 300;
+    color: #2A1B0E;
+    font-weight: 600;
     text-transform: uppercase;
     font-family: 'Inconsolata', monospace;
 
@@ -110,4 +113,31 @@ body{
 .game-button.green:hover {
   top:2px;
   box-shadow: 0 4px 0 #348628, 0 6px 1px 1px rgba(0,0,0,.3), 0 8px 0 5px #2a6d20, 0 10px 0 5px #39822e, 0 13px 0 5px #1d4c16, 0 13px 1px 6px rgba(0,0,0,.3);
+}
+
+
+/* CARACTER */
+.container-player{
+    display: flex;
+    margin-top: 40px;
+
+}
+.caracter h2{
+    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    margin-top: 20px;
+}
+.caracter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: -20px;
+}
+.caracter img{
+    width: 60%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
