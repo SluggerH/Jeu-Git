@@ -5,6 +5,7 @@ Class Monster {
     Private $damage;
     Private $name;
 
+    //class
     public function getLife()
     {
         return $this->life;

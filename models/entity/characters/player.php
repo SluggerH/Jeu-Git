@@ -1,6 +1,6 @@
 <?php
 
-Class Character {
+Class Player {
     Private $life;
     Private $damage;
     Private $name;
