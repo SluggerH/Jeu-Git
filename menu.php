@@ -2,7 +2,7 @@
 <body>
 
     <div class="container">
-        <H1 class="welcome">Select your caracter</H1>
+        <H1 class="welcome">Select your character</H1>
 
         <div class="container-player">
             <div class="caracter guerrier">

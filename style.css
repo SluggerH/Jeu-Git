@@ -137,9 +137,35 @@ body{
     align-items: center;
     padding: 40px;
 }
-.caracter img{
+.caracter img, .monster img{
     width: 50%;
     display: flex;
     justify-items: center;
     align-items: center;
+}
+
+/* GAME */
+.game{
+  width: 90vw;
+}
+.container-game{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.monster{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.monster p, .caracter p{
+  text-transform: uppercase;
+  font-family: 'Inconsolata', monospace;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #2A1B0E;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
