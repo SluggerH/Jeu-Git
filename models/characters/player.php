@@ -5,6 +5,23 @@ abstract class Player {
     Private $damage;
     Private $defense;
     Private $name;
+    Private $attackable;
+
+    /**
+     * @return mixed
+     */
+    public function getAttackable()
+    {
+        return $this->attackable;
+    }
+
+    /**
+     * @param mixed $attackable
+     */
+    public function setAttackable($attackable)
+    {
+        $this->attackable = $attackable;
+    }
 
     /**
      * @return mixed

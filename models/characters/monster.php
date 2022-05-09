@@ -50,7 +50,7 @@ Class Monster {
      */
     public function setDefense($defense)
     {
-        $this->damage = $defense;
+        $this->defense = $defense;
     }
 
     /**
