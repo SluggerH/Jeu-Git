@@ -8,7 +8,7 @@
             <div class="caracter guerrier">
                 <div class="desc">
                     <img class="c" src="assets/guerrier.png" alt="guerrier">
-                    <img class="d" src="assets/guerrier.png" alt="guerrier">
+                    <img class="d" src="assets/fiche_guerrier.png" alt="guerrier">
                 </div>
                 <h2>GUERRIER</h2>
                 <button id="guerrier" class="game-button green">Select</button>
@@ -16,7 +16,7 @@
             <div class="caracter mage">
                 <div class="desc">
                     <img class="c" src="assets/mage.png" alt="mage">
-                    <img class="d" src="assets/mage.png" alt="mage">
+                    <img class="d" src="assets/fiche_mage.png" alt="mage">
                 </div>
                 <h2>MAGE</h2>
                 <button id="mage" class="game-button green">Select</button>

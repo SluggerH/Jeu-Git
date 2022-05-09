@@ -122,6 +122,9 @@ body{
     margin-top: 40px;
 
 }
+.desc{
+  display: flex;
+}
 .caracter h2{
     text-transform: uppercase;
     font-family: 'Inconsolata', monospace;
@@ -132,11 +135,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin: -20px;
+    padding: 40px;
 }
 .caracter img{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-items: center;
     align-items: center;
