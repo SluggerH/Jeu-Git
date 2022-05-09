@@ -1,6 +1,6 @@
 <?php
 
-Class Player {
+abstract class Player {
     Private $life;
     Private $damage;
     Private $defense;
@@ -51,7 +51,7 @@ Class Player {
      */
     public function setDefense($defense)
     {
-        $this->damage = $defense;
+        $this->defense = $defense;
     }
 
     /**
