@@ -31,7 +31,7 @@ final class PlayerTests extends TestCase
     }
     public function testSpecialAttackMagePlayer(){
         $player =  new mage("Willy");
-        $this->assertEquals($player->normalAttack(),4.5);
+        $this->assertEquals($player->specialAttack(),4.5);
     }
     public function testBlockGuerrierPlayer(){
         $player =  new guerrier("Arnold");
