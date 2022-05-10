@@ -7,6 +7,8 @@ Class Monster {
     Private $defense;
     Private $name;
 
+
+
     //class
     public function getLife()
     {
