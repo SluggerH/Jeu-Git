@@ -14,7 +14,7 @@ class mage extends Player {
         return $this->getDamage();
     }
     public function specialAttack(){
-        print $this->normalAttack() * 1.5;
+        return $this->normalAttack() * 1.5;
     }
     public function healLife(){
         $this->setLife($this->getLife() + 3);

@@ -23,7 +23,7 @@ final class PlayerTests extends TestCase
     public function testHealMagePlayer(){
         $player =  new mage("Willy");
         $player->healLife();
-        $this->assertEquals($player->getLife(),153);
+        $this->assertEquals($player->getLife(),103);
     }
     public function testAttackMagePlayer(){
         $player =  new mage("Willy");
