@@ -1,9 +1,9 @@
 {
-  "name": "game/fightinggame",
+  "name": "php/fightinggame",
   "description": "A game used as a sample of CI_CD",
   "license": "proprietary",
   "scripts": {
-    "test": "vendor/bin/phpunit ./tests/"
+    "test": "vendor/bin/phpunit tests"
   },
   "autoload": {
     "classmap": [
