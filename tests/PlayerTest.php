@@ -13,7 +13,7 @@ final class PlayerTests extends TestCase
         $this->assertEquals($player->getName(),"Willy");
     }
     public function testStatGuerrierPlayer(){
-        $player =  new mage("Arnold");
+        $player =  new guerrier("Arnold");
         $this->assertEquals($player->getLife(),150);
         $this->assertEquals($player->getDamage(),5);
         $this->assertEquals($player->getAttackable(),true);
