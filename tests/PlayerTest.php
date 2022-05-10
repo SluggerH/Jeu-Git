@@ -27,11 +27,13 @@ final class PlayerTests extends TestCase
     }
     public function testAttackMagePlayer(){
         $player = new mage("Willy");
-        $this->assertEquals($player->normalAttack(),3);
+        $monster = new mageMonster('Gérald');
+        $this->assertEquals($player->normalAttack($monster->getDefense(), $monster->getLife()),77.15);
     }
     public function testSpecialAttackMagePlayer(){
         $player = new mage("Willy");
-        $this->assertEquals($player->specialAttack(),4.5);
+        $monster = new mageMonster('Gérald');
+        $this->assertEquals($player->specialAttack($monster->getDefense(), $monster->getLife()),75.725);
     }
     public function testBlockGuerrierPlayer(){
         $player = new guerrier("Arnold");
@@ -40,20 +42,25 @@ final class PlayerTests extends TestCase
     }
     public function testAttackGuerrierPlayer(){
         $player = new guerrier("Arnold");
-        $this->assertEquals($player->normalAttack(),5);
+        $monster = new mageMonster('Gérald');
+        $this->assertEquals($player->normalAttack($monster->getDefense(), $monster->getLife()),75.25);
     }
     public function testSpecialAttackGuerrierPlayer(){
         $player = new guerrier("Arnold");
-        $this->assertEquals($player->specialAttack(),12.5);
+        $monster = new mageMonster('Gérald');
+        $this->assertEquals($player->specialAttack($monster->getDefense(), $monster->getLife()),68.125);
     }
-    public function testAttackMonsterOnMagePlayer(){
+    public function testAttackMageMonsterOnMagePlayer(){
         $player = new mage("Willy");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 96.4);
     }
-    public function testAttackMonsterOnGuerrierPlayer(){
+    public function testAttackMageMonsterOnGuerrierPlayer(){
         $player = new guerrier("Arnold");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 146.8);
+    }
+    public function testMagePlayerAttackOnMageMonster(){
+
     }
 }

@@ -12,8 +12,8 @@ class mageMonster extends Monster {
     public function normalAttack($defense, $life){
         return $life - ($this->getDamage()-(($this->getDamage()*$defense)/100));
     }
-    public function specialAttack(){
-        return $this->normalAttack() * 1.5;
+    public function specialAttack($defense, $life){
+        return $this->normalAttack($defense, $life) * 1.5;
     }
     public function healLife(){
         $this->setLife($this->getLife() + 5);

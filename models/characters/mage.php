@@ -10,11 +10,11 @@ class mage extends Player {
         $this->setName($name);
     }
 
-    public function normalAttack(){
-        return $this->getDamage();
+    public function normalAttack($defense, $life){
+        return $life - ($this->getDamage()-(($this->getDamage()*$defense)/100));
     }
-    public function specialAttack(){
-        return $this->normalAttack() * 1.5;
+    public function specialAttack($defense, $life){
+        return $life - (($this->getDamage()* 1.5)-((($this->getDamage()* 1.5)*$defense)/100));
     }
     public function healLife(){
         $this->setLife($this->getLife() + 3);
