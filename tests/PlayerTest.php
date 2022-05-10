@@ -49,11 +49,11 @@ final class PlayerTests extends TestCase
     public function testAttackMonsterOnMagePlayer(){
         $player = new mage("Willy");
         $monster = new mageMonster('Gérald');
-        $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 146.8);
+        $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 96.4);
     }
     public function testAttackMonsterOnGuerrierPlayer(){
         $player = new guerrier("Arnold");
         $monster = new mageMonster('Gérald');
-        $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 96.8);
+        $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 146.8);
     }
 }
