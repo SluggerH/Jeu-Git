@@ -1,5 +1,5 @@
 {
-  "name": "php/fightingGame",
+  "name": "fightingGame",
   "description": "A game used as a sample of CI_CD",
   "license": "proprietary",
   "scripts": {
