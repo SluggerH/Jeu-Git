@@ -25,12 +25,12 @@ final class PlayerTests extends TestCase
         $player->healLife();
         $this->assertEquals($player->getLife(),103);
     }
-    public function testAttackMagePlayer(){
+    public function testAttackMagePlayerOnMageMonster(){
         $player = new mage("Willy");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($player->normalAttack($monster->getDefense(), $monster->getLife()),77.15);
     }
-    public function testSpecialAttackMagePlayer(){
+    public function testSpecialAttackMagePlayerOnMageMonster(){
         $player = new mage("Willy");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($player->specialAttack($monster->getDefense(), $monster->getLife()),75.725);
@@ -40,12 +40,12 @@ final class PlayerTests extends TestCase
         $player->setAttackable(false);
         $this->assertEquals($player->getAttackable(),false);
     }
-    public function testAttackGuerrierPlayer(){
+    public function testAttackGuerrierPlayerOnMageMonster(){
         $player = new guerrier("Arnold");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($player->normalAttack($monster->getDefense(), $monster->getLife()),75.25);
     }
-    public function testSpecialAttackGuerrierPlayer(){
+    public function testSpecialAttackGuerrierPlayerOnMageMonster(){
         $player = new guerrier("Arnold");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($player->specialAttack($monster->getDefense(), $monster->getLife()),68.125);
@@ -59,8 +59,5 @@ final class PlayerTests extends TestCase
         $player = new guerrier("Arnold");
         $monster = new mageMonster('Gérald');
         $this->assertEquals($monster->normalAttack($player->getDefense(), $player->getLife()), 146.8);
-    }
-    public function testMagePlayerAttackOnMageMonster(){
-
     }
 }
