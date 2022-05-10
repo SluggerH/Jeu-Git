@@ -1,6 +1,6 @@
 <?php
 
-class guerrier extends player {
+class guerrier extends Player {
 
     public function __construct($name){
         $this->setLife(150);

@@ -1,6 +1,6 @@
 <?php
 
-class mage extends player {
+class mage extends Player {
 
     public function __construct($name){
         $this->setLife(100);
